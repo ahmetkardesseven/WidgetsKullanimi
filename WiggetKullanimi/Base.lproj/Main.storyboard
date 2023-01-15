@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WiggetKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRY-UD-5zd">
+                                <rect key="frame" x="175.66666666666666" y="91" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Veri giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZO-kn-ay7">
+                                <rect key="frame" x="32" y="144" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tf-Yu-ciI">
+                                <rect key="frame" x="170.33333333333334" y="210" width="52.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yap"/>
+                                <connections>
+                                    <action selector="buttonYap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aru-g0-l62"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim1" translatesAutoresizingMaskIntoConstraints="NO" id="kxc-ah-4Oq">
+                                <rect key="frame" x="172.66666666666666" y="277" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.96611279250000004" green="0.14735538279999999" blue="0.19873478459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.002235090073" green="0.80796033140000001" blue="0.077113713530000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="7pP-68-lLa"/>
+                                    <constraint firstAttribute="height" constant="48" id="fcY-eV-WKL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtI-Sd-1cJ">
+                                <rect key="frame" x="32" y="284" width="83" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim 1"/>
+                                <connections>
+                                    <action selector="btnResim1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xt6-lz-Qpx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWL-wq-bZQ">
+                                <rect key="frame" x="276" y="284" width="85" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim 2"/>
+                                <connections>
+                                    <action selector="btnResim2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IlL-1F-OcD"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pA1-8M-GsA">
+                                <rect key="frame" x="172" y="357" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchDegisim:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vu2-Lw-pQ3"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-lk-mZN">
+                                <rect key="frame" x="158.66666666666666" y="751" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Göster"/>
+                                <connections>
+                                    <action selector="buttonGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MWh-42-Vu3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gtI-Sd-1cJ" firstAttribute="top" secondItem="NZO-kn-ay7" secondAttribute="bottom" constant="106" id="DoX-0J-WsI"/>
+                            <constraint firstItem="8Tf-Yu-ciI" firstAttribute="top" secondItem="NZO-kn-ay7" secondAttribute="bottom" constant="32" id="Ii8-K0-pML"/>
+                            <constraint firstItem="kxc-ah-4Oq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OXm-tH-GDP"/>
+                            <constraint firstItem="uRY-UD-5zd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="QPW-jf-ezf"/>
+                            <constraint firstItem="8Tf-Yu-ciI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SHg-ma-l1Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NZO-kn-ay7" secondAttribute="trailing" constant="32" id="Vcy-50-1yn"/>
+                            <constraint firstItem="AWL-wq-bZQ" firstAttribute="top" secondItem="NZO-kn-ay7" secondAttribute="bottom" constant="106" id="YbS-xS-y1e"/>
+                            <constraint firstItem="pA1-8M-GsA" firstAttribute="top" secondItem="kxc-ah-4Oq" secondAttribute="bottom" constant="32" id="Z4G-4m-4WU"/>
+                            <constraint firstItem="NZO-kn-ay7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="b6a-Xe-HTI"/>
+                            <constraint firstItem="uRY-UD-5zd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c93-BX-wva"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AWL-wq-bZQ" secondAttribute="trailing" constant="32" id="dep-f3-7YI"/>
+                            <constraint firstItem="gtI-Sd-1cJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="jUn-gY-FHp"/>
+                            <constraint firstItem="Gad-lk-mZN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l4C-XO-XOz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gad-lk-mZN" secondAttribute="bottom" constant="32" id="pig-bR-Ddz"/>
+                            <constraint firstItem="kxc-ah-4Oq" firstAttribute="top" secondItem="8Tf-Yu-ciI" secondAttribute="bottom" constant="32" id="pub-1G-q2T"/>
+                            <constraint firstItem="NZO-kn-ay7" firstAttribute="top" secondItem="uRY-UD-5zd" secondAttribute="bottom" constant="32" id="uDk-9b-Cr0"/>
+                            <constraint firstItem="pA1-8M-GsA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xlp-Mh-OVa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="kxc-ah-4Oq" id="tFF-8O-7Fh"/>
+                        <outlet property="labelSonuc" destination="uRY-UD-5zd" id="h6E-cs-wxa"/>
+                        <outlet property="mSwich" destination="pA1-8M-GsA" id="Ge0-61-oM5"/>
+                        <outlet property="textField" destination="NZO-kn-ay7" id="Q9U-rY-qgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="resim1" width="13" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
